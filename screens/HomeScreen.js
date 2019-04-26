@@ -1,11 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default class Home extends React.Component {
+export default class HomeScreen extends React.Component {
   static navigationOptions = {
-    title: 'app.json',
+    header: null
   };
-
+  
   render() {
     return (
       <View>
@@ -15,7 +15,7 @@ export default class Home extends React.Component {
   }
 }
 
-const styles = StyleSheet.creat({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',

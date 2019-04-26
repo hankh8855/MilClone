@@ -1,15 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default class Search extends React.Component {
+export default class AdsScreen extends React.Component {
   static navigationOptions = {
-    title: 'app.json',
+    title: '밀리',
   };
 
   render() {
     return (
       <View>
-        <Text>search</Text>
+        <Text>ads</Text>
       </View>
     );
   }

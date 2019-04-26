@@ -1,21 +1,21 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default class Feedback extends React.Component {
+export default class SettingScreen extends React.Component {
   static navigationOptions = {
-    title: 'app.json',
+    header: null
   };
 
   render() {
     return (
       <View>
-        <Text>feedback</Text>
+        <Text>setting</Text>
       </View>
     );
   }
 }
 
-const styles = StyleSheet.creat({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',

@@ -1,21 +1,21 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default class Ads extends React.Component {
+export default class MyLibraryScreen extends React.Component {
   static navigationOptions = {
-    title: 'app.json',
+    header: null
   };
-
+  
   render() {
     return (
       <View>
-        <Text>ads</Text>
+        <Text>MyLibrary</Text>
       </View>
     );
   }
 }
 
-const styles = StyleSheet.creat({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',

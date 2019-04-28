@@ -7,21 +7,30 @@ import Colors from '../constants/Colors';
 export default class TabBarIcon extends React.Component {
   render() {
     return (
-      <View>
+      <View style={style.container}>
         <Icon.Ionicons
           name={this.props.name}
-          size={26}
-          style={{ marginBottom: -3 }}
-          color={this.props.focused ? Colors.navigationActive : Colors.tabIconDefault}
+          size={20}
+          style={style.icon}
+          color={this.props.focused ? Colors.navigationSelected : Colors.navigationText}
         />
-        <Text style={{color:this.props.focused ? Colors.navigationActive : Colors.tabIconDefault}}>{this.props.label}</Text>
+        <Text style={{...style.label, color:this.props.focused ? Colors.navigationSelected : Colors.navigationText}}>{this.props.label}</Text>
       </View>
     );
   }
 }
 
 const style = StyleSheet.create({
-  label:{
-    
+  container:{
+    flex: 1,
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  icon: {
+    marginBottom: 3,
+  },
+  label: {
+    fontSize: 12,
+    width:'100%',
   }
 })

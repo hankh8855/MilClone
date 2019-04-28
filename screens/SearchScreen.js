@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default class SearchScreen extends React.Component {
   static navigationOptions = {
     header: null
-  };
+  }
   
   render() {
     return (

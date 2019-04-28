@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default class SettingScreen extends React.Component {
+export default class TodayScreen extends React.Component {
   static navigationOptions = {
     header: null
   }
@@ -9,7 +9,7 @@ export default class SettingScreen extends React.Component {
   render() {
     return (
       <View>
-        <Text>setting</Text>
+        <Text>today</Text>
       </View>
     );
   }

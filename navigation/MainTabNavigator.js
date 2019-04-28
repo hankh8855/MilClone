@@ -9,14 +9,15 @@ import FeedbackScreen from '../screens/FeedbackScreen';
 import SearchScreen from '../screens/SearchScreen';
 import MyLibraryScreen from '../screens/MyLibraryScreen';
 import SettingScreen from '../screens/SettingScreen';
+import HomeTabNavigator from './HomeTabNavigator';
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
 })
 HomeStack.navigationOptions = {
-  tabBarLabel: '홈',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
+      label={'홈'}
       focused={focused}
       name={
         Platform.OS === 'ios' ? 'ios-home' : 'md-home'
@@ -29,9 +30,9 @@ const SearchStack = createStackNavigator({
   Search: SearchScreen,
 })
 SearchStack.navigationOptions = {
-  tabBarLabel:'검색',
   tabBarIcon:({focused}) => (
     <TabBarIcon 
+      label={'검색'}
       focused={focused}
       name={
         Platform.OS === 'ios' ? 'ios-search' : 'md-search'
@@ -44,9 +45,9 @@ const FeedbackStack = createStackNavigator({
   Feedback: FeedbackScreen,
 })
 FeedbackStack.navigationOptions = {
-  tabBarLabel:'피드',
   tabBarIcon: ({focused}) => (
     <TabBarIcon 
+      label={'피드'}
       focused={focused}
       name={
         Platform.OS === 'ios' ? 'ios-paper' : 'md-paper'
@@ -59,9 +60,9 @@ const MyLibraryStack = createStackNavigator({
   MyLibrary: MyLibraryScreen,
 })
 MyLibraryStack.navigationOptions = {
-  tabBarLabel:'내서재',
   tabBarIcon:({focused}) => (
-    <TabBarIcon 
+    <TabBarIcon
+      label={'내서재'}
       focused={focused}
       name={
         Platform.OS === 'ios' ? 'ios-filing' : 'md-filing'
@@ -76,7 +77,7 @@ const SettingStack = createStackNavigator({
 SettingStack.navigationOptions = {
   tabBarIcon:({focused}) => (
     <TabBarIcon
-      label={'관리'} 
+      label={'관리'}
       focused={focused}
       name={
         Platform.OS === 'ios' ? 'ios-person' : 'md-person'
@@ -85,15 +86,21 @@ SettingStack.navigationOptions = {
   )
 }
 export default createMaterialTopTabNavigator ({
-    HomeStack,
+    HomeStack:{
+      screen: HomeTabNavigator,
+    },
     SearchStack,
     FeedbackStack,
     MyLibraryStack,
     SettingStack,
   },
   {
+    
     animationEnabled: false,
     tabBarOptions:{
+      indicatorStyle: {
+        backgroundColor: Colors.navigationBackground
+      },
       showIcon: true,
       showLabel: false,
       labelStyle: {
@@ -101,11 +108,11 @@ export default createMaterialTopTabNavigator ({
         fontSize: 11,
       },
       tabStyle: {
-        height: 49,
+        height: 52,
       },
       style: {
-        marginTop: 26,
+        marginTop:22,
         backgroundColor: Colors.navigationBackground
       }
-    }    
+    },
 })

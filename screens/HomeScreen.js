@@ -1,15 +1,18 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import {HomeNavigator} from '../navigation/AppNavigator';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
     header: null
-  };
+  }
   
   render() {
     return (
-      <View>
-        <Text>home</Text>
+      <View style={styles.container}>
+        <View>
+          {/* <HomeNavigator /> */}
+        </View>
       </View>
     );
   }
@@ -17,8 +20,6 @@ export default class HomeScreen extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  }
+    // flex:1,
+  },
 })

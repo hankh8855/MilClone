@@ -12,6 +12,8 @@ export default {
   noticeBackground: tintColor,
   noticeText: '#fff',
   navigationText: '#888',
-  navigationBackground: '#fff',
-  navigationActive: '#ffc004', 
+  navigationBackground: 'transparent',
+  navigationSelected: '#ffc004',
+  homeNavigationText: 'black',
+  homeNavigationSelected: '#9268bb',
 };

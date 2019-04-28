@@ -111,8 +111,12 @@ export default createMaterialTopTabNavigator ({
         height: 52,
       },
       style: {
-        marginTop:22,
-        backgroundColor: Colors.navigationBackground
+        marginTop: 22,
+        paddingBottom: 2,
+        backgroundColor: Colors.navigationBackground,
+        borderBottomWidth:1,
+        borderStyle:'solid',
+        borderBottomColor:Colors.underline,
       }
     },
 })

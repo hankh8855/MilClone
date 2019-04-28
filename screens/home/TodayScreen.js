@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import {Underline} from '../../components/Underline'
 
 export default class TodayScreen extends React.Component {
   static navigationOptions = {
@@ -10,6 +11,7 @@ export default class TodayScreen extends React.Component {
     return (
       <View>
         <Text>today</Text>
+        <Underline />
       </View>
     );
   }

@@ -16,4 +16,5 @@ export default {
   navigationSelected: '#ffc004',
   homeNavigationText: 'black',
   homeNavigationSelected: '#9268bb',
+  underline: '#eee',
 };

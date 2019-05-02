@@ -1,6 +1,5 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import {HomeNavigator} from '../navigation/AppNavigator';
+import { StyleSheet, View, FlatList } from 'react-native';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -9,11 +8,8 @@ export default class HomeScreen extends React.Component {
   
   render() {
     return (
-      <View style={styles.container}>
-        <View>
-          {/* <HomeNavigator /> */}
-        </View>
-      </View>
+      <FlatList style={styles.container}>
+      </FlatList>
     );
   }
 }
@@ -22,4 +18,5 @@ const styles = StyleSheet.create({
   container: {
     // flex:1,
   },
+
 })

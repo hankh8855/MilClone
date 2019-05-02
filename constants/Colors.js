@@ -17,4 +17,9 @@ export default {
   homeNavigationText: 'black',
   homeNavigationSelected: '#9268bb',
   underline: '#eee',
+  paginationBackground: 'rgba(0, 0, 0, 0.7)',
+  paginationText: 'white',
+  todayBookBackground: '#7fbaaf',
+  todayBookText: 'white',
+  quotation: '#888',
 };
